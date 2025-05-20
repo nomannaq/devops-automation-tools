@@ -1,4 +1,11 @@
-name: Deploy Next.js site to Pages
+name: Deploy Next.js site to GitHub Pages
+description: |
+  This workflow builds and deploys a Next.js site to GitHub Pages.
+  It uses the `actions/configure-pages` action to set up the environment for deployment.
+  The workflow is triggered on pushes to the `main` branch and can also be run manually.
+  The workflow includes steps to check out the code, set up Node.js, restore the cache, install dependencies,
+  build the Next.js site, and deploy it to GitHub Pages.
+  The deployment is done using the `actions/deploy-pages` action.
 
 on:
   push:
